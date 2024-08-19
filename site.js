@@ -1,30 +1,3 @@
-/*what's js good for?
-1. front-end dev; interactivity
-2. write server-side code, manage databases, and handle HTTP requests and responses, for full-stack development using a single language
-*/
-
-//to run js by itself, do this: node __js filename__ (site.js)
-/*
-const monthlyRent = 500;
-const yearlyRent = monthlyRent * 12;
-console.log(yearlyRent);
-*/
-
-//creates server/an html port 8000 with the http leading the site name; need to connect w html
-/*
-const http = require("http");
-
-const host = 'localhost';
-const port = 8000;
-
-const requestListener = function (req, res) {};
-
-const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
-});
-*/
-
 function addRow(){
     var theTable = document.getElementById("GPAtable");
     var rows = theTable.rows.length; //count curr # of rows(1)
@@ -114,14 +87,3 @@ function resetGPA(){
     document.getElementById("clearForm").reset(); //clears the user input & starts anew for the first row
 
 }
-
-/*
-https://myrun.newark.rutgers.edu/how-calculate-your-cumulative-gpa#:~:text=Add%20up%20your%20grade%20points,credits%20earned%20in%20those%20courses.
-https://dev.to/analyze0/how-to-make-a-gpa-calculator-as-a-beginner-in-html-javascript-1o9c
-https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insert_deleterow
-https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_deleterow2
-https://www.javatpoint.com/add-and-delete-rows-of-a-table-on-button-clicks
-https://www.geeksforgeeks.org/cgpa-calculator-using-html-css-javascript/#
-https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript
-https://myrun.newark.rutgers.edu/how-calculate-your-cumulative-gpa#:~:text=Add%20up%20your%20grade%20points,credits%20earned%20in%20those%20courses.
-*/
