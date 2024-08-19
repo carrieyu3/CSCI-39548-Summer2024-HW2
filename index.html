@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header id = "header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <div class = "navbar-title">GPA Calculator</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <table id = "GPAtable"> <!--creates a table format-->
+        <thead> <!--sets the headers/titles of table-->
+            <tr> <!--table row-->
+                <th>Course</th> <!--bolds the header & makes it known-->
+                <th>Letter Grade</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+
+        <tbody> <!--table body-->
+            <tr> <!--table row-->
+                <form id = "clearForm"> <!--for reset() method-->
+                    <td><input type = "text" class = "course" id = "course" name = "course" placeholder = "e.g. Comp Sci" required></td> <!--table data--> 
+                    <td><input type = "text" class = "letterGrade" id = "letterGrade" name = "letterGrade" placeholder = "e.g. A" required></td>
+                    <td><input type = "number" class = "courseCredits" id = "courseCredits" class = "courseCredits" placeholder = "e.g. 3" required></td>
+                </form>
+            </tr>            
+        </tbody>
+    </table>
+
+    <div class = "buttons">
+        <button class = "add-button" type = "button" onclick = "addRow()">+Add row</button>
+        <button class = "calculate-button" type = "button" onclick = "calculateGPA()">Calculate GPA</button>
+        <button class = "reset-button" type = "button" onclick = "resetGPA()">Reset GPA</button>
+        <button class = "delete-button" type = "button" onclick = "deleteRow()">-Delete row</button>
+    </div>
+
+    <p>GPA: <span id="outputGPA"></span></p> <!--displays the output-->
+    <script src = "/site.js"></script> <!--connects to javascript-->
+
+    <img src="GPA_chart.png" alt="GPA chart for reference">
+
+</body>
+</html>
