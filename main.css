@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header nav{
+    background-color: beige;
+    padding: 1em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#header .container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the content */
+}
+
+.navbar-title {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#GPAtable{
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    background-color: beige;
+}
+
+.add-button:hover, .calculate-button:hover, .reset-button:hover{
+    background-color: grey;
+}
+
+.delete-button:hover{
+    background-color: red;
+}
+
+.js-buttons:hover{
+    background-color: red;
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*code for centering images*/
+img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+}
